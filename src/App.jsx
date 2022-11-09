@@ -1,13 +1,10 @@
-import { useState } from 'react'
-
+import CardComponent from "./components/CardComponent";
 function App() {
-   const [number, setNumber] = useState(0)
-
   return (
-   <>
-   { number }
-   </>
-  )
+    <>
+      <CardComponent />
+    </>
+  );
 }
 
-export default App
+export default App;
