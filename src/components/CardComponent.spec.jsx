@@ -1,3 +1,5 @@
-test('Testando app', () => {
-  expect(1 + 1).toBe(2)
-})
+describe('Jest', () => {
+  it('testing jest', () => {
+    expect(1).toBe(1);
+  });
+});
