@@ -1,8 +1,8 @@
-### React + Javascript + Vite + Tailwind
+### React + Javascript + Vite + Testing library +Tailwind
 
 **💬 About.** 
 
-react project. React, Vite, Javascript, Tailwind CSS e bibliotecas adicionais.
+react project. React, Vite, Javascript, Testing library, Tailwind e bibliotecas adicionais.
 
 **👇 Follow the steps.** 
 
