@@ -1,4 +1,4 @@
-import CardComponent from "./components/CardComponent";
+import CardComponent from "./components/Card/CardComponent.jsx";
 import { useState, useEffect } from "react";
 
 function App() {
