@@ -1,4 +1,4 @@
-import MyButton from "../MyButton/MyButton"
+import MyButton from "../MyButton/MyButton.jsx"
 
 function CardComponent() {
 
@@ -21,6 +21,7 @@ function CardComponent() {
           react tailwind css card with image It is a long established fact that
           a reader will be distracted by the readable content.
         </p>
+
         <MyButton text="See more" onClick={ addFuncion } />
       </div>
     </div>
