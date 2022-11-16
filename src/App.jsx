@@ -1,26 +1,15 @@
-import CardComponent from "./components/Card/CardComponent.jsx";
-import { useState, useEffect } from "react";
+import { Index } from './pages/Index';
 
 function App() {
-  let [reminders, setReminders] = useState([])
-
-  useEffect(() => {
-    fetch("/api/reminders")
-      .then((res) => res.json())
-      .then((json) => {
-        setReminders(json.reminders)
-      })
-  }, [])
   return (
     <>
-      <ul>
-        {reminders.map((reminders) => (
-          <li key={reminders.id}>{reminders.text}</li>
-        ))}
-      </ul>
-      <CardComponent />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Index />} />
+        </Routes>
+      </Router>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
