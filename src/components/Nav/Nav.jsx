@@ -1,30 +1,33 @@
 import logo from '../../assets/Logo.svg'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import MyButton from '../MyButton/MyButton.jsx'
 
 function Nav() {
-  let [reminders, setReminders] = useState([])
-
-  useEffect(() => {
-    fetch('/api/reminders')
-      .then((res) => res.json())
-      .then((json) => {
-        setReminders(json.reminders)
-      })
-  }, [])
+  function addFuncion() {
+    alert('hey')
+  }
 
   return (
-    <>
-      <Link to="/">
-        <img src={ logo } alt="logo" />
-      </Link>
+    <div className="flex justify-between mt-8">
+      <div>
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+      </div>
 
-      <ul>
-        {reminders.map((reminders) => (
-          <li key={reminders.id}>{reminders.text}</li>
-        ))}
-      </ul>
-    </>
+      <div className="flex items-center">
+        <Link to="/">
+          <p className="px-4 text-base">Home</p>
+        </Link>
+        <Link to="/">
+          <p className="px-4 text-base">About</p>
+        </Link>
+        <Link to="/">
+          <p className="px-4 text-base">Pricing</p>
+        </Link>
+        <MyButton text="Sign up" onClick={addFuncion} />
+      </div>
+    </div>
   )
 }
 
