@@ -4,7 +4,7 @@ import MyButton from '../MyButton/MyButton.jsx'
 
 function Nav() {
   function addFuncion() {
-    alert('hey')
+    alert('Sign up')
   }
 
   return (
@@ -25,6 +25,7 @@ function Nav() {
         <Link to="/">
           <p className="px-4 text-base">Pricing</p>
         </Link>
+
         <MyButton text="Sign up" onClick={addFuncion} />
       </div>
     </div>

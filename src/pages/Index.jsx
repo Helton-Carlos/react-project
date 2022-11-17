@@ -3,7 +3,7 @@ import Nav from "../components/Nav/Nav.jsx"
 
 function Index() {
   return (
-    <div className="w-11/12 m-auto">
+    <div className="w-10/12 m-auto">
       <Nav />
       <Main />
     </div>
