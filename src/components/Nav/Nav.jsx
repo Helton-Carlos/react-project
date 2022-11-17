@@ -19,7 +19,7 @@ function Nav() {
         <Link to="/">
           <p className="px-4 text-base">Home</p>
         </Link>
-        <Link to="/">
+        <Link to="/about">
           <p className="px-4 text-base">About</p>
         </Link>
         <Link to="/">
