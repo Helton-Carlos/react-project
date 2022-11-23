@@ -15,7 +15,7 @@ function Main() {
         <MyButton text="Try it for free" onClick={addFuncion} />
       </div>
       
-      <img src={ Illustration } alt="Illustration" className='h-[450px]'/>
+      <img src={ Illustration } alt="Illustration" className='h-[470px]'/>
     </div>
   )
 }
